@@ -1,0 +1,120 @@
+.navbar-desktop{
+    /* border: 2px solid red; */
+   
+}
+.desktop-container{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.logo{
+    font-size: 3rem;
+    color: #6A4AA1;
+    text-transform: uppercase;
+}
+.desktop-menu{
+    /* border: 2px solid black; */
+}
+.desktop-menu ul{
+    list-style: none;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 2rem;
+    
+}
+.desktop-menu li{
+    /* border: 2px solid green; */
+    padding: 1rem 1.5rem;
+    background-color: #6A4AA1;
+    border-radius: 1rem;
+}
+.desktop-menu li:hover{
+    background-color: #292D33;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* .desktop-menu li:hover > a{
+    color: #6A4AA1;
+    transition: 0.5s;
+} */
+.desktop-menu a{
+    text-decoration: none;
+    color: white;    
+}
+/* *********** Mobile Menu************ */
+
+.navbar-mobile{
+    display: none;
+    
+}
+.mobile-container{
+    /* border: 2px solid blue; */
+    position: relative;
+    
+}
+.ham-icon{
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #D01E55;
+}
+.mobile-menu{
+    /* border: 4px solid green; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    border-radius: 2rem;
+}
+.mobile-menu ul{
+    list-style: none;
+    font-size: 1.8rem;
+    /* position:absolute; */
+    /* border: 2px solid red; */
+    z-index: 10;
+    width: 30%;
+    text-align: center;
+    /* background: black; */
+    border-radius: 2rem;
+    
+}
+.mobile-menu li {
+/* border: 2px solid green; */
+padding: 1rem;
+/* width: 40rem; */
+
+
+}
+.mobile-menu li:hover{
+    background-color: #D01E55;
+    transition: 0.5s;
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries */
+@media(max-width:990px){
+    .desktop-menu ul{
+        display: none;
+    }
+    .desktop-container{     
+        justify-content: center;     
+    }
+    .navbar-mobile{
+        display: flex;
+        
+    }
+
+
+
+    
+}
