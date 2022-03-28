@@ -15,9 +15,9 @@
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
 }
-input{
+.contact-input{
     padding: 2rem;
     margin-bottom: 2rem;
     border: none;

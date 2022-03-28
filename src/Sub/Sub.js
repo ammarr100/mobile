@@ -1,27 +1,23 @@
 import React from 'react'
-import './Sub.css'
-
+import './sub.css'
 const Sub = () => {
   return (
    <>
-       <section className='sub'>
-      
+        <section className='sub'>
+        <div className='sub-heading container'>
+            <h1>Subscribe</h1>
+        </div>
             <div className='sub-container container'>
-                <div className='sub-items'>
-                <div className='sub-text'>
-                <h1>Subscribe</h1>
-            <div className='sub-flex'>
-            <input className='sub-input' type="text" name="" id="" placeholder='Enter your Email' />
-            <button className='btn-submit'>Submit</button>
+            <div className='sub-items'>
+            <input className='sub-input' type="text" name="" id="" placeholder='Enter your Name' />
+                <button className='btn-submit'>Submit</button>
             </div>
                 
-                </div>
-                </div>
-                
             </div>
-       </section>
+        </section>
    </>
   )
 }
 
 export default Sub
+

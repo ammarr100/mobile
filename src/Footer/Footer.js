@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className='footer-section'>
     <div className='footer-content'>
-    
-        <a href="https://ammar.tech" target='_blank'>Visit : Ammar.tech</a>
-        <p>Created by Ammar Rashid</p>
+    <p>Developed by Ammar Rashid</p>
+    <a href="https://ammar.tech" target='_blank'>Visit : ammar.tech</a>
+        
     </div>
         
     </footer>

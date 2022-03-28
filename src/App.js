@@ -1,30 +1,25 @@
 import React from 'react'
-import About from './About/About'
-import Contact from './Contact/Contact'
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
-import Love from './Love/Love'
-import Navbar from './Navbar/Navbar'
-import ServicesIndex from './Services/ServicesIndex'
-import Sub from './Sub/Sub'
-import SystemIndex from './System/SystemIndex'
-import TeamIndex from './Team/TeamIndex'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Home'
+import About_ from './Pages/About_';
+import Blog_ from './Pages/Blog_';
+import Contact_ from './Pages/Contact_';
+import Products_ from './Pages/Products_';
+import Services_ from './Pages/Services_';
 
 const App = () => {
   return (
    <>
-     <Navbar/>
-     <Header/>
-     <Love/>     
-     <ServicesIndex/>
-     <Sub/>
-     <SystemIndex/>
-     <TeamIndex/>
-     <About/>
-     <Contact/>
-     <Footer/>
+   <Routes>
+          <Route exact path = '/' element = {<Home/>}></Route>
+          <Route path = 'products' element = {<Products_/>}></Route>
+          <Route path = '/services' element = {<Services_/>}></Route>
+          <Route path = '/blog' element = {<Blog_/>}></Route>
+          <Route path = '/about' element = {<About_/>}></Route>
+          <Route path = '/contact' element = {<Contact_/>}></Route>
+          <Route path = '*' element = {<Home/>}></Route>
+      </Routes>
    </>
   )
 }
-
 export default App

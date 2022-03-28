@@ -9,14 +9,13 @@
     align-items: center;
     padding: 2rem 0;
 }
-.logo{
+.logo a{
     font-size: 3rem;
     color: #6A4AA1;
     text-transform: uppercase;
+    text-decoration: none;
 }
-.desktop-menu{
-    /* border: 2px solid black; */
-}
+
 .desktop-menu ul{
     list-style: none;
     display: flex;
@@ -35,10 +34,7 @@
     transition: 0.5s;
     cursor: pointer;
 }
-/* .desktop-menu li:hover > a{
-    color: #6A4AA1;
-    transition: 0.5s;
-} */
+
 .desktop-menu a{
     text-decoration: none;
     color: white;    
